@@ -19,17 +19,16 @@ public class MainActivity extends AppCompatActivity {
     public void calculatePercent(View v){
         TextView totalTextView = (TextView) findViewById(R.id.totaltextview);
         EditText billEditText = (EditText) findViewById(R.id.bill);
-        TextView totalTextView = (TextView) findViewById(R.id.totaltextview);
         TextView tipTextView = (TextView) findViewById(R.id.tip);
 
-        CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.twostar);
+        CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.onestar);
         Boolean checkBox1State = simpleCheckBox.isChecked();
 
-        CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.twostar);
-        Boolean checkBox2State = simpleCheckBox.isChecked();
+        //CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.twostar);
+        //Boolean checkBox2State = simpleCheckBox.isChecked();
 
-        CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.twostar);
-        Boolean checkBox3State = simpleCheckBox.isChecked();
+        //CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.threestar);
+        //Boolean checkBox3State = simpleCheckBox.isChecked();
 
         double tip;
 
@@ -37,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
             tip = 0.05;
         }
 
-        if(checkBox2State){
-            tip = 0.1;
-        }
-        if(checkBox3State){
-            tip = 0.15;
-        }
+        //if(checkBox2State){
+            //tip = 0.1;
+       // }
+        //if(checkBox3State){
+            //tip = 0.15;
+       // }
 
 
     }
