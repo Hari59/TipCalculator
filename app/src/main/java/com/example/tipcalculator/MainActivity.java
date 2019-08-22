@@ -21,27 +21,31 @@ public class MainActivity extends AppCompatActivity {
         EditText billEditText = (EditText) findViewById(R.id.bill);
         TextView tipTextView = (TextView) findViewById(R.id.tip);
 
-        CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.onestar);
-        Boolean checkBox1State = simpleCheckBox.isChecked();
+        CheckBox simpleCheckBox1 = (CheckBox) findViewById(R.id.onestar);
+        Boolean checkBox1State = simpleCheckBox1.isChecked();
 
-        //CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.twostar);
-        //Boolean checkBox2State = simpleCheckBox.isChecked();
+        CheckBox simpleCheckBox2 = (CheckBox) findViewById(R.id.twostar);
+        Boolean checkBox2State = simpleCheckBox2.isChecked();
 
-        //CheckBox simpleCheckBox = (CheckBox) findViewById(R.id.threestar);
-        //Boolean checkBox3State = simpleCheckBox.isChecked();
+        CheckBox simpleCheckBox3 = (CheckBox) findViewById(R.id.threestar);
+        Boolean checkBox3State = simpleCheckBox3.isChecked();
 
-        double tip;
+        double tip = 0;
 
         if(checkBox1State){
             tip = 0.05;
         }
 
-        //if(checkBox2State){
-            //tip = 0.1;
-       // }
-        //if(checkBox3State){
-            //tip = 0.15;
-       // }
+        if(checkBox2State){
+            tip = 0.1;
+        }
+        if(checkBox3State){
+            tip = 0.15;
+        }
+
+        double total = tip;
+
+        totalTextView.setText("ok");
 
 
     }
